@@ -1,0 +1,82 @@
+body {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 12px;
+	background-image: url("../images/me.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+}
+
+@media (max-width: 1000px) {
+	body {
+		background: none;
+		position: absolute;
+		left: 0;
+		transform: translate(0);
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+	body {
+		background-size: 300px 300px;
+	}
+}
+
+@media (min-width: 1400px) {
+	body {
+		background-size: 400px 400px;
+	}
+}
+
+.image-me {
+	display: none;
+}
+
+@media (max-width: 1000px) {
+	.image-me {
+		display: block;
+	}
+	.image-me img {
+		height: auto;
+		width: 90%;
+	}
+}
+
+.project .row span {
+	font-weight: bold;
+}
+
+.description {
+	padding-top: 10px;
+}
+
+.description .welcome .col-xs-12:first-child {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+.description .welcome .col-xs-12:second-child {}
+
+.description .welcome .col-xs-12:third-child {}
+
+.cv-title {
+	border-bottom: 1px solid;
+	border-bottom-color: #222;
+	font-weight: bold;
+}
+
+.cv-title-detail {
+	font-weight: bold;
+}
+
+.row>.col-xs-12 span {
+	font-weight: bold;
+}
+
+.links {
+	padding-bottom: 30px;
+}
